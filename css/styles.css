@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "Exo 2";
+  src: url("fonts/Exo2-Medium.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif; /* Se mueve aquí para aplicar a todo el documento */
+  font-weight: 900; /* Se mueve aquí para aplicar a todo el documento */
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.section-1 {
+  /* background-color: #ff0000; Rojo */
+  background: linear-gradient(to right, #9e77f3, rgb(15, 80, 179));
+}
+
+/* Seccion 1 */
+
+.section-1 {
+  position: relative;
+  z-index: -1;
+  height: 100%; /* Ajusta la altura al 100% del viewport */
+  display: flex; /* Cambia a flexbox para distribuir los elementos verticalmente */
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.section-1-left {
+  flex: 1;
+  /* box-shadow: 0 2px 8px rgba(14, 19, 24, 0.07); */
+  position: relative;
+  z-index: 0;
+}
+
+.section-1-right {
+  flex: 1;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3vw;
+  font-weight: 200;
+}
+
+.section-1-right .centered-text {
+  width: 100%;
+  text-align: center;
+}
+
+.section-1-right {
+  align-self: center;
+  margin-top: 20px;
+}
+
+.learn-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: rgb(15, 80, 179);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Fin seccion 1 */
+
+.section-2 {
+  /* background-color: #00ff00; Verde */
+}
+
+/* Seccion 2 */
+
+.section-2 {
+  display: flex;
+  align-items: center;
+}
+
+.text-p8{
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.section-2-left {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 2.3vw;
+  font-weight: 200;
+  padding-bottom: 7rem;
+}
+
+.section-2-right {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3vw;
+  font-weight: 200;
+  background-image: url("../img/portada1.webp");
+  background-size: cover;
+  background-position: right;
+  min-height: 100vh;
+  filter: grayscale(100%);
+}
+
+.quien_somos_text {
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 4vw;
+  color: rgb(15, 80, 179);
+  font-size: 5vw;
+}
+
+/* Fin seccion 2 */
+
+.section-3 {
+  background-color: #ffffff; /* Azul */
+}
+
+/* Seccion 3 */
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section-top {
+  flex: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 80, 179);
+}
+
+.section-bottom {
+  flex: 80;
+  display: flex;
+  flex-wrap: wrap; /* Nueva propiedad para que los elementos se ajusten en diferentes tamaños de pantalla */
+  justify-content: center; /* Añadimos alineación central */
+  align-items: center; /* Añadimos alineación central */
+}
+
+.bottom-left,
+.bottom-middle,
+.bottom-right {
+  flex-basis: 33.33%; /* Cambiamos la propiedad para que los elementos se ajusten correctamente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  border: 2px dotted #0f50b3; /* Estilo de borde punteado personalizable */
+  padding: 20px; /* Espacio interior personalizable */
+  margin: 4rem; /* Cambiamos el margen para que se ajuste en diferentes tamaños de pantalla */
+  border-radius: 10px; /* Radio de borde personalizable */
+  text-align: center; /* Centramos el contenido del contenedor */
+}
+
+.top {
+  flex: 40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle {
+  flex: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottom {
+  flex: 50;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-middle {
+  background-color: #0000ff; /* Ejemplo: Azul */
+}
+
+.bottom-right {
+  background-color: #75753e; /* Ejemplo: Amarillo */
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.num_imagen {
+  color: rgb(0, 196, 204);
+}
+
+.tit_tarjeta {
+  font-size: 2vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f50b3;
+}
+
+.text_tarjeta {
+  font-size: 1vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fin seccion 3 */
+
+/* Seccion 4 */
+
+.section-4 {
+  background: linear-gradient(to right, #9e77f3, rgb(15, 80, 179));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #9e77f3, rgb(15, 80, 179));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.slogan {
+  font-size: 2rem;
+}
+
+/* Fin seccion 4 */
+
+/* Seccion 5 */
+.section-5 {
+  background: linear-gradient(to right, #9e77f3, rgb(15, 80, 179));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-content {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.social_net {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.social_net i {
+  font-size: 2vw; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.centered-text {
+  margin-bottom: 10px;
+}
+
+.contacto-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: rgb(15, 80, 179);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Fin seccion 5 */
+.hcard {
+  height: 80%;
+}
+
+.centered-text {
+  text-align: center;
+}
